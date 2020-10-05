@@ -6,6 +6,11 @@
 
 <% ArrayList<Disciplina> disciplina = (ArrayList) application.getAttribute ("Disciplinas"); %>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -25,5 +30,25 @@
                         <th>Nota</th>
                     </tr>  
         </thead>
+        <tbody>
+            <% for (int i=0; i<disciplinas.seze(); i++>){%>
+            <% Disciplina disciplina = disciplinas.get(i);%>
+            
+            <tr><td><%=disciplina.getNome()%></td>
+                <td><%=disciplina.getEmenta()%></td>
+                <td><%=disciplina.getCiclo()%></td>
+                <td>
+                    <form>
+                        <input type="test" name="nota" value="<%=disciplina.getNota()%>">
+                        <input type="hidden" name="indice" value="<%=i%>" />
+                        
+                        <td><>input type="submit" name="enviar" value="modificar" /></td>
+                    </form><!-- comment -->
+                </td><!-- comment -->
+                <%} %>
+            </<tr>
+        </tbody>
+        </table>
+        </div>  
     </body>
 </html>
