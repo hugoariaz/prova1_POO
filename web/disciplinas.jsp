@@ -1,8 +1,4 @@
-<%-- 
-    Document   : disciplinas
-    Created on : Oct 5, 2020, 4:03:43 PM
-    Author     : ariaz
---%>
+<%@include file="WEB-INF/menu.jspf"%>>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
