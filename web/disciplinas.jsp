@@ -1,4 +1,4 @@
-<%@include file="WEB-INF/menu.jspf"%>>
+<%@include file="WEB-INF/menu.jspf"%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
